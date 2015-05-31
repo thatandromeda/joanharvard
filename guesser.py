@@ -28,6 +28,7 @@ This method has some clear problems, including:
 * I haven't bothered to invest time cleaning up incorrect codings in the
   MARC fields under consideration (and cataloging standards are clearly
   inconsistent).
+* A large fraction of works are produced by corporate and/or missing authors.
 
 """
 import argparse
@@ -125,10 +126,6 @@ for f in files:
                 pass
 
             total_records += 1
-
-            if total_records > 500:
-                break
-
 
 # Count the number of guessably male or female names.
 cur.execute("SELECT * FROM test WHERE gender='female';")
