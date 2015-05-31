@@ -1,0 +1,4 @@
+gender-detector==0.0.6
+psycopg2==2.6
+pymarc==3.0.3
+six==1.9.0
