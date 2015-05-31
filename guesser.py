@@ -122,8 +122,9 @@ for f in files:
                 cur.execute("INSERT INTO test (year, name, gender) VALUES (%s, %s, %s)",
                     (year, name, gender))
                 processed_records += 1
+                print "%s processed\n" % str100a
             except:
-                pass
+                print "Skipped processing broken record\n"
 
             total_records += 1
 
